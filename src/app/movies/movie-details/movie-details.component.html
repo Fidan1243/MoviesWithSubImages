@@ -1,0 +1,28 @@
+<div *ngIf="movie else no_movies" >
+    <div class="card">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ movie.imageUrl }}" class="img-fluid rounded-start" >
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title">{{movie.title}}</h1>
+                    <p class="card-text">{{movie.description}}</p>
+                    <img *ngFor="let item of movie.subImages" src="{{item}}" class="img w-25 m-2 border">
+                    <ngx-dropzone (change)="onSelect($event)">
+                        <ngx-dropzone-label>Drop for sub image!</ngx-dropzone-label>
+                        <!-- <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
+                            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                          </ngx-dropzone-image-preview> -->
+                    </ngx-dropzone>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #no_movies>
+            <div class="alert alert-warning">
+                No movie found.
+            </div>
+</ng-template>

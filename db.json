@@ -1,0 +1,127 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Shazam ",
+      "description": "Shazam description",
+      "imageUrl": "https://movieposters2.com/images/1631718-b.jpg",
+      "isPopular": 0,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Julie Verne ",
+      "description": "Salam",
+      "imageUrl": "https://movieposters2.com/images/1849503-b.jpg",
+      "isPopular": 1,
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "title": "I Kill Giants",
+      "description": "I Kill Giants description",
+      "imageUrl": "https://movieposters2.com/images/1520245-b.jpg",
+      "isPopular": 0,
+      "categoryId": 3
+    },
+    {
+      "id": 4,
+      "title": "Ferdinand ",
+      "description": "Ferdinand description",
+      "imageUrl": "https://movieposters2.com/images/1524659-b.jpg",
+      "isPopular": 1,
+      "categoryId": 3
+    },
+    {
+      "title": "Interstellar",
+      "description": "Ela kino",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+      "isPopular": false,
+      "datePublished": 1655794253600,
+      "categoryId": "4",
+      "id": 6
+    },
+    {
+      "title": "Intern",
+      "description": "Ela kino",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c9/The_Intern_Poster.jpg",
+      "isPopular": false,
+      "datePublished": 1655794398456,
+      "categoryId": "3",
+      "id": 7
+    },
+    {
+      "isPopular": false,
+      "datePublished": 1656156420990,
+      "id": 8
+    },
+    
+    {
+      "title": "Fast And Furius",
+      "description": "Fast And Furius",
+      "imageUrl": "https://i.pinimg.com/550x/7e/2f/02/7e2f028717cf3b245477311023467309.jpg",
+      "isPopular": false,
+      "datePublished": 1656156537269,
+      "categoryId": "1",
+      "id": 10
+    },
+    {
+      "title": "New Moviee",
+      "description": "https://i.pinimg.com/550x/7e/2f/02/7e2f028717cf3b245477311023467309.jpg",
+      "imageUrl": "https://i.pinimg.com/550x/7e/2f/02/7e2f028717cf3b245477311023467309.jpg",
+      "isPopular": false,
+      "datePublished": 1656156670788,
+      "categoryId": "3",
+      "id": 11
+    },
+    {
+      "isPopular": false,
+      "datePublished": 1656157103242,
+      "categoryId": -1,
+      "id": 12
+    },
+    {
+      "isPopular": false,
+      "datePublished": 1656157122258,
+      "categoryId": -1,
+      "id": 13
+    },
+    {
+      "isPopular": false,
+      "datePublished": 1656157412011,
+      "categoryId": -1,
+      "id": 14
+    },
+    {
+      "title": "Movie New",
+      "description": "Description",
+      "imageUrl": "https://m.media-amazon.com/images/I/91ppKFYpatL._SX522_.jpg",
+      "isPopular": false,
+      "datePublished": 1656158099089,
+      "categoryId": "2",
+      "id": 15
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "adventure"
+    },
+    {
+      "id": 2,
+      "name": "romantic"
+    },
+    {
+      "id": 3,
+      "name": "comedy"
+    },
+    {
+      "id": 4,
+      "name": "sci-fi"
+    },
+    {
+      "id": 5,
+      "name": "dram"
+    }
+  ]
+}

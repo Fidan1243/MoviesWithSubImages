@@ -1,0 +1,76 @@
+<h1>Create Movie</h1>
+
+
+<form [formGroup]="movieForm" (ngSubmit)="createMovie()">
+
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name="title"  type="text" class="form-control" formControlName="title"  >
+      <div class="alert alert-danger" *ngIf="movieForm.get('title').invalid && movieForm.get('title').touched" >
+          <p  *ngIf="movieForm.get('title').errors['required']" >
+              Required field
+          </p>
+          <p  *ngIf="movieForm.get('title').errors['minlength']" >
+            Min length should be more than 5
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea  name="description" class="form-control" formControlName="description"  ></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="imageUrl" class="form-label">Image Url</label>
+        <input name="imageUrl"  type="text" class="form-control"  formControlName="imageUrl"  >
+    </div>
+
+<div class="mb-3">
+    <label for="categoryId" class="form-label"></label>
+    <select  formControlName="categoryId"  name="categoryId"  class="form-select">
+        <option value="-1" >Select Category</option>
+        <option *ngFor="let item of categories" [value]="item.id" >{{item.name}}</option>
+    </select>
+</div>
+<button [disabled]="movieForm.invalid" type="submit" class="btn btn-success"  >
+    Create Movie
+</button>
+<button [disabled]="movieForm.invalid" class="btn btn-warning" (click)="ClearForm()" >Clear</button>
+
+</form>
+
+<!-- <form #form="ngForm" (ngSubmit)="createMovie()">
+
+
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input minlength="10" #title="ngModel" maxlength="30" required [(ngModel)]="model.title" name="title"  type="text" class="form-control">
+        <div class="alert alert-danger m-2" *ngIf="title.invalid && title.touched"> 
+            <p *ngIf="title.errors['required']" > Required places</p>
+            <p *ngIf="title.errors['minlength']" > Minimum 10 characters write</p>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea required [(ngModel)]="model.description" name="description" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="imageUrl" class="form-label">Image Url</label>
+        <input required [(ngModel)]="model.imageUrl" name="imageUrl"  type="text" class="form-control">
+    </div>
+
+<div class="mb-3">
+    <label for="categoryId" class="form-label"></label>
+    <select [(ngModel)]="model.categoryId" name="categoryId"  class="form-select">
+        <option value="-1" >Select Category</option>
+        <option *ngFor="let item of categories" [value]="item.id" >{{item.name}}</option>
+    </select>
+</div>
+<button [disabled]="form.invalid" type="submit" class="btn btn-success"  >
+    Create Movie
+</button>
+
+</form> -->

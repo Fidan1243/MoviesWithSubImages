@@ -1,0 +1,10 @@
+<h1>Create Category</h1>
+
+<form (ngSubmit)="createCategory(name.value)"> 
+    <div>
+        <label for="name" class="form-label" >Name</label>
+        <input #name type="text" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Create</button>
+</form>
