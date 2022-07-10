@@ -34,7 +34,6 @@ export class MovieDetailsComponent implements OnInit {
         this.movieService.updateMovie(this.movie).subscribe(data=>
           {
             console.log(data);
-            this.router.navigate(['/movies'])});;
       }
     });
   }
